@@ -46,7 +46,10 @@ setuptools.setup(
         "Programming Language :: Python"
     ],
     entry_points={
-        "console_scripts": ["nova = novaclient.shell:main"]
+        "console_scripts": [
+            "nova = novaclient.shell:main",
+            "nova-watch = novaclient.watch:main",
+        ]
     },
     data_files=[('novaclient', ['novaclient/versioninfo'])]
 )
